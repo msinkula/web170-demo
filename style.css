@@ -1,0 +1,354 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*
+Theme Name: Mike Sinkula's WordPress Demo
+Author: Mike Sinkula of Premium Design Works
+Author URI: http://www.premiumdw.com/
+Description: This is my demo theme for the WEB170 WordPress class.
+Version: 1.0
+*/
+
+
+/* 
+Purple: http://slayeroffice.com/tools/color_palette/?hex=39275B
+Gold: http://slayeroffice.com/tools/color_palette/?hex=EBB700
+*/
+
+* { margin: 0; padding: 0; }
+
+html {
+	background: linear-gradient(to bottom,  #2b1d44 0%, #39275b 100%); /* W3C */
+	}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 100%; /* sets all type sizes to a default 16px */
+	color: #000000;
+	background-image: url(images/bg-boxes.png);
+	background-position: top ; /* positioned to the top of page */
+	background-repeat: repeat-x; /* repeat horizontally */
+	}
+	
+h1 {
+	font-size: 2.25em; /* 36px */
+	line-height: 100%; /* 36px */
+	color: #FFF;
+	}
+	
+h2 {
+	font-size: 1.5em; /* 24px */
+	line-height: 100%; /* 24px */
+	color: #39275B; /* purple */
+	/*padding-top: 8px;*/ 
+	margin-bottom: 10px; /* changed */
+	}
+	
+h3 {
+	font-size: 1.125em; /* 18px */
+	line-height: 100%; /* 18px */
+	color: #39275B; /* purple */
+	padding-top: 10px; /* changed */
+	margin-bottom: 4px; /* changed */
+	}
+	
+p {
+	font-size: 1em;  /* 16px */
+	line-height: 150%; /* 24px */
+	margin-bottom: 10px;
+	}
+	
+ol, ul {
+	font-size: 1em;  /* 16px */
+	line-height: 150%; /* 24px */
+	margin-bottom: 10px;
+	list-style-position: inside;
+	}
+	
+img {
+	box-sizing: border-box;
+	max-width: 100%;
+	height: auto;
+	}
+	
+#header {
+	max-width: 980px; /* change to a max-width */
+	margin: 0 auto;
+	padding-top: 20px; /* change the padding */
+	/*border: 1px solid black;*/
+	}
+	
+	#header a {
+		color: #FFFFFF; /* white */
+		text-decoration: none; /* remove undeline */
+	}
+	
+	#header a:hover {
+		color: #EBB700; /* gold */
+	}	
+	
+	#toggle {
+		display: none;
+	}
+	
+
+#navigation {
+	max-width: 980px; /* change to a max-width */
+	margin: 0 auto;
+	padding: 10px 0; /* lets change this to 10px top/bottom and 0px left/right */
+	/*border: 1px solid black;*/
+	color: #FFF; /* give all text elements a color of white */
+	}
+	
+	#navigation ul {
+		overflow: hidden; /* prevents the great collapse */
+		/*border: 1px solid grey;*/
+		padding: 10px 0;
+		margin: 0; /* overwrites existing margins */
+	}
+	
+	#navigation ul li {
+		list-style: none;
+		float: left;
+		margin: 0; /* overwrites existing margins */
+		margin-right: 20px; /* gives the items space between */
+	}
+	
+		#navigation ul li a {
+			color: #FFF; /* let's use white for the default link state */
+			text-decoration: none; /* this disables the default underline */
+		}
+		
+		#navigation ul li a:hover {
+			color: #EBB700; /* and use bright gold */
+		}
+		
+		#navigation ul li.current-menu-item a, #navigation ul li.current-menu-parent a {
+			color: #EBB700; /* and use bright gold */
+		}
+		
+		#navigation ul li ul.sub-menu {
+			display: none;
+		}
+	
+#middle {
+	max-width: 940px; /* change to a max-width */
+	background-image: url(/*images/bg-960.png*/);
+	background-position: center;
+	background-repeat: repeat-y;
+	background-color:#FFFFFF;
+	overflow: hidden; /* prevents the great collapse */
+	margin: 0 auto;
+	padding: 20px; /* change padding to 20px all around */
+	border-radius: 10px; /* adds rounded corners */
+	}
+	
+	#middle a {
+		color: #39275B; /* purple */
+	}
+	
+	#middle a:hover {
+		color: #EBB700; /* gold */
+	}
+	
+	#widgets {
+		overflow: hidden;
+	}
+	
+	#widgets section.widget-item {
+		width: 300px;
+		float: left;
+		margin-right: 20px;
+	}
+	
+	#widgets section.widget-item:last-child {
+		margin-right: 0px;
+	}
+	
+	#content {
+		width: 620px;
+		float: left;
+	}
+	
+		#content label {
+			display: block;
+			color: #39275B;
+			margin-bottom: 4px;
+			font-weight: bold;
+		}
+		
+		#content blockquote {
+			border-top: 1px solid #39275B;
+			border-bottom: 1px solid #39275B;
+			padding: 10px 0;
+			font-style: italic;
+			color: #39275B;
+		}
+		
+		#content input, #content select, #content textarea {
+			display: block;
+			margin-bottom: 10px;
+		}
+		
+		#content img {
+			border: 1px solid #000;
+			padding: 4px;	
+		}
+		
+		#content img.featured {
+			margin-bottom: 10px;
+		}
+	
+	#sidebar {
+		width: 300px;
+		float: right;
+	}
+	
+	#sidebar ul {
+	
+	}
+	
+	#sidebar ul li {
+	
+	}
+	
+#footer {
+	max-width: 980px; /* change to a max-width */
+	margin: 0 auto;
+	padding: 20px 0; /* change the padding */
+	color: #FFF; /* give all text elements a color of white */
+	}
+	
+	#footer a {
+		color: #FFFFFF; /* white */
+	}
+	
+	#footer a:hover {
+		color: #EBB700; /* gold */
+	}
+	
+/* Desktop Screen Set to 1024px or Below */
+@media screen and (max-width: 1024px) {
+	
+	html { -webkit-text-size-adjust: none; }
+	
+	#middle {
+		padding: 20px 02.04%; /* 20px / 980px */
+	}
+	
+	#content {
+		width: 65.95%; /* 620px / 940px */
+	}
+	
+	#sidebar {
+		width: 31.91%; /* 300px / 940px */
+	}
+	
+	#widgets section.widget-item {
+		width: 31.91%; /* 300px / 940px */
+		margin-right: 02.12%; /* 20px / 940px */
+	}
+	
+}
+
+/* Tablet Screen Set to 800px or Below  */
+@media screen and (max-width: 800px) {
+	
+	#header {
+		padding-left: 02.04%; /* 20px / 980px */
+		padding-right: 02.04%;
+	}
+	
+	#navigation {
+		padding-left: 02.04%;
+		padding-right: 02.04%;
+	}
+	
+	#middle {
+		border-radius: 0px; /* removes rounded corners */
+	}
+	
+	#footer {
+		padding-left: 02.04%;
+		padding-right: 02.04%;
+	}
+	
+}
+
+/* Mobile Screen Set to 600px or Below  */
+@media screen and (max-width: 600px) {
+	
+	#header {
+		padding-left: 10px;
+		padding-right: 10px;
+		overflow: hidden; /* prevent the great collapse */
+	}
+	
+	#logo {
+		float: left; /* float our logo left */
+		margin-bottom: 10px;
+	}
+	
+	#toggle {
+		display: block; /* make our toggle visible */
+		float: right; /* float our toggle right */
+		padding-top: 7px; /* move this into place */
+	}
+	
+	#navigation {
+		display: none; /* hide our navigation */
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	
+	#navigation ul li {
+		float: none;
+		padding: 10px;
+		border-top: 1px solid #FFF;
+		margin: 0;
+	}
+	
+	#navigation ul li:last-child {
+		border-bottom: 1px solid #FFF;
+	}
+	
+	#navigation ul li ul.sub-menu {
+			display: block;
+		}
+	
+	#navigation ul li a {
+		display: block; /* makes the anchor tag extend out */
+	}
+	
+	#middle {
+		padding: 20px 10px;
+	}
+	
+	#content {
+		width: 100%;
+		float: none;
+		margin-bottom: 20px;
+	}
+	
+	#sidebar {
+		width: 100%;
+		float: none;
+		padding-top: 20px;
+		border-top: 1px solid #39275B;
+	}
+	
+	#widgets section.widget-item {
+		width: 100%;
+		float: none;
+		margin-right: 0;
+		margin-bottom: 20px;
+	}
+	
+	#footer {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	
+}
+
+	
