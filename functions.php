@@ -26,6 +26,7 @@ register_nav_menus(array(
 // Create Post Thumbnails
 add_theme_support( 'post-thumbnails' );
 //
+
 // Create Page Excerpts
 add_post_type_support( 'page', 'excerpt' );
 //
