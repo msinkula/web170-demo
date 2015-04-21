@@ -45,7 +45,7 @@
 
 <!-- Begin Header -->
 <div id="header">
-<h1 id="logo"><a href="#">Mike Sinkula</a></h1>
+<h1 id="logo"><a href="../wordpress/">Mike Sinkula</a></h1>
 <img id="toggle" src="<?php bloginfo('template_directory'); ?>/images/img-toggle.png" width="25" height="25" alt="Toggle Menu">
 </div>
 <!-- End Header -->
