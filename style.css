@@ -177,6 +177,11 @@ img {
 			font-weight: bold;
 		}
 		
+		#content small {
+			display: block;
+			margin-bottom: 10px;
+		}
+		
 		#content blockquote {
 			border-top: 1px solid #39275B;
 			border-bottom: 1px solid #39275B;
@@ -190,14 +195,50 @@ img {
 			margin-bottom: 10px;
 		}
 		
+		#content article.post-excerpt {
+			overflow: hidden;
+			margin-bottom: 20px;
+		}
+		
+		#content article.post-excerpt p {
+			display: inline;
+			
+		}
+		
 		#content img {
 			border: 1px solid #000;
 			padding: 4px;	
 		}
 		
+			#content a img {
+				border: 1px solid #39275B;
+			}
+			
+			#content a:hover img {
+				border: 1px solid #EBB700;
+			}
+		
 		#content img.featured {
 			margin-bottom: 10px;
 		}
+		
+		/* ----- Post Thumbnails ----- */
+		
+		#content img.wp-post-image {}
+		
+		#content img.attachment-thumbnail {
+			float: left;
+			margin: 4px 20px 0 0;
+		}
+		
+		#content img.attachment-medium {}
+		
+		#content img.attachment-large {}
+		
+		#content img.attachment-full {}
+		
+		
+
 	
 	#sidebar {
 		width: 300px;
