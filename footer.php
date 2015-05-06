@@ -3,7 +3,7 @@
 
 <!-- Begin Footer -->
 <div id="footer">
-<p>&copy;2014 <a href="http://www.mikesinkula.com/">Mike Sinkula</a>. All rights reserved.</p>
+<p>&copy;2014 <a href="http://www.mikesinkula.com/">Mike Sinkula</a>. All rights reserved. <?php wp_loginout(); ?></p>
 </div>
 <!-- End Footer -->
 
