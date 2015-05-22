@@ -253,6 +253,28 @@ img {
 	
 	}
 	
+	#sidebar blockquote {
+		position: relative;
+		padding: 10px;
+		margin: 20px 0;
+		border-top: 2px solid #EBB700;
+		border-bottom: 2px solid #EBB700;
+		font-style: italic;
+	}
+	
+	#sidebar blockquote:before {
+		position: absolute;
+		width: 24px;
+		height: 20px;
+		font-size: 3em;
+		color: #EBB700;
+		content:'“';
+		background-color: #fff;
+		top: -18px;
+		left: -4px;
+			
+	}
+	
 #footer {
 	max-width: 980px; /* change to a max-width */
 	margin: 0 auto;
