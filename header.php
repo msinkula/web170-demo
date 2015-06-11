@@ -2,9 +2,13 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title><?php bloginfo('description'); ?> | <?php bloginfo('name'); ?> | Seattle, WA.</title>
+
+<!-- Start Title Tag -->
+<title><?php get_my_title_tag(); ?></title>
+<!-- End Title Tag -->
 
 <!-- Begin Meta -->
+<meta name="description" content="<?php echo strip_tags(get_the_excerpt()); ?>" />
 <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0" />
 <!-- End Meta -->
 
